@@ -1,0 +1,16 @@
+.fn {
+	font-family: var( --wp--preset--font-family--system-sans-serif );
+	font-size: var( --wp--preset--font-size--xx-small );
+	font-weight: 500;
+	line-height: 1;
+}
+
+.fn a {
+	display: inline-flex;
+	opacity: .66;
+	padding: 0 .25em;
+}
+
+.fn a:hover {
+	opacity: 1;
+}

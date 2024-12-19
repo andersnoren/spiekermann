@@ -1,0 +1,30 @@
+.is-style-spiekermann-post-terms {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .57em;
+}
+
+.is-style-spiekermann-post-terms.has-text-align-center {
+	justify-content: center;
+}
+
+.is-style-spiekermann-post-terms.has-text-align-right {
+	justify-content: flex-end;
+}
+
+.is-style-spiekermann-post-terms .wp-block-post-terms__separator {
+	display: none;
+}
+
+.is-style-spiekermann-post-terms a {
+	border: 1px solid var( --wp--preset--color--contrast-4 );
+	border-radius: 4px;
+	display: inline-block;
+	padding: .3em .7142857143em;
+	transition: all .1s linear;
+}
+
+:root .is-style-spiekermann-post-terms:not(.has-text-color) a:hover {
+	background-color: var( --wp--preset--color--contrast-4 );
+	text-decoration: none;
+}

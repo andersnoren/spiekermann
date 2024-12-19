@@ -1,0 +1,150 @@
+/*
+Theme Name: Spiekermann
+Text Domain: spiekermann
+Version: 1.0.0
+Description: Demo: https://spiekermann.andersnoren.se
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, blog, portfolio, news
+Author: Anders Norén
+Author URI: https://andersnoren.se
+Theme URI: https://andersnoren.se/teman/spiekermann-wordpress-theme/
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 6.5
+Requires PHP: 7.4
+Tested up to: 6.7
+*/
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+:root :where(.wp-site-blocks) > * {
+	margin-block-start: 0;
+}
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+}
+
+a, .wp-element-button {
+	transition: color .1s linear, background-color .1s linear, border-color .1s linear, opacity .1s linear;
+}
+
+
+/*
+ * Helper classes
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+:root :where(.wp-site-blocks) > * {
+	margin-block-start: 0;
+}
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+}
+
+a, .wp-element-button {
+	transition: color .1s linear, background-color .1s linear, border-color .1s linear, opacity .1s linear;
+}
+
+
+/*
+ * Helper classes
+ */
+
+.hide-empty:not(:has(*)) {
+	display: none !important;
+}
+
+
+/*
+ * Inputs
+ */
+ 
+::placeholder { 
+	color: var( --wp--preset--color--contrast-2 );
+}
+
+label {
+	font-family: var( --wp--preset--font-family--system-sans-serif );
+	font-size: var(--wp--preset--font-size--x-small);
+}
+
+:where(input, textarea, select) {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid var(--wp--preset--color--contrast-4);
+	border-radius: 4px;
+	color: inherit;
+	font-family: var(--wp--preset--font-family--system-sans-serif);
+	font-size: var( --wp--preset--font-size--small );
+	line-height: 1.5;
+	margin: 0;
+	padding: .75em 1em;
+}
+
+textarea {
+	height: 5lh;
+}
+
+
+/*
+ * Template Part: Footer
+ */
+
+footer.wp-block-template-part a[href="https://andersnoren.se"] {
+	text-decoration: none;
+}
+
+footer.wp-block-template-part a[href="https://andersnoren.se"]:hover {
+	text-decoration: underline;
+}
+
+
+/*
+ * Block binding: Comment count link.
+ */
+
+.spiekermann-comment-count-link {
+	text-decoration: none;
+}
+
+@supports( mask-image: url() ) {
+
+	.spiekermann-comment-count-link {
+		padding-left: 1.5714285714em;
+		position: relative;
+	}
+
+	.spiekermann-comment-count-link:before {
+		background: currentColor;
+		content: "";
+		display: block;
+		height: 1.1428571429em;
+		margin: 0 auto var( --wp--preset--spacing--30 ) auto;
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99554 13.1943C6.25588 13.9238 7.73847 14.1699 9.16691 13.887C10.5953 13.604 11.8721 12.8112 12.7592 11.6564C13.6463 10.5016 14.0831 9.06361 13.9883 7.61051C13.8934 6.15741 13.2734 4.78839 12.2437 3.75871C11.214 2.72902 9.84497 2.10895 8.39187 2.01409C6.93876 1.91924 5.50076 2.35607 4.34595 3.24316C3.19114 4.13024 2.39835 5.40703 2.11539 6.83547C1.83243 8.26391 2.07862 9.7465 2.80804 11.0068L2.02617 13.3412C1.99679 13.4293 1.99253 13.5238 2.01386 13.6142C2.03519 13.7046 2.08127 13.7873 2.14694 13.8529C2.2126 13.9186 2.29526 13.9647 2.38565 13.986C2.47603 14.0074 2.57057 14.0031 2.65867 13.9737L4.99554 13.1943Z' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99554 13.1943C6.25588 13.9238 7.73847 14.1699 9.16691 13.887C10.5953 13.604 11.8721 12.8112 12.7592 11.6564C13.6463 10.5016 14.0831 9.06361 13.9883 7.61051C13.8934 6.15741 13.2734 4.78839 12.2437 3.75871C11.214 2.72902 9.84497 2.10895 8.39187 2.01409C6.93876 1.91924 5.50076 2.35607 4.34595 3.24316C3.19114 4.13024 2.39835 5.40703 2.11539 6.83547C1.83243 8.26391 2.07862 9.7465 2.80804 11.0068L2.02617 13.3412C1.99679 13.4293 1.99253 13.5238 2.01386 13.6142C2.03519 13.7046 2.08127 13.7873 2.14694 13.8529C2.2126 13.9186 2.29526 13.9647 2.38565 13.986C2.47603 14.0074 2.57057 14.0031 2.65867 13.9737L4.99554 13.1943Z' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+			-webkit-mask-position: center;
+		mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		position: absolute;
+			left: 0;
+			top: 50%;
+		transform: translateY( -50% );
+		width: 1.1428571429em;
+	}
+
+	.spiekermann-comment-count-link:hover:before {
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99554 13.1943C6.25588 13.9238 7.73847 14.1699 9.16691 13.887C10.5953 13.604 11.8721 12.8112 12.7592 11.6564C13.6463 10.5016 14.0831 9.06361 13.9883 7.61051C13.8934 6.15741 13.2734 4.78839 12.2437 3.75871C11.214 2.72902 9.84497 2.10895 8.39187 2.01409C6.93876 1.91924 5.50076 2.35607 4.34595 3.24316C3.19114 4.13024 2.39835 5.40703 2.11539 6.83547C1.83243 8.26391 2.07862 9.7465 2.80804 11.0068L2.02617 13.3412C1.99679 13.4293 1.99253 13.5238 2.01386 13.6142C2.03519 13.7046 2.08127 13.7873 2.14694 13.8529C2.2126 13.9186 2.29526 13.9647 2.38565 13.986C2.47603 14.0074 2.57057 14.0031 2.65867 13.9737L4.99554 13.1943Z' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.99554 13.1943C6.25588 13.9238 7.73847 14.1699 9.16691 13.887C10.5953 13.604 11.8721 12.8112 12.7592 11.6564C13.6463 10.5016 14.0831 9.06361 13.9883 7.61051C13.8934 6.15741 13.2734 4.78839 12.2437 3.75871C11.214 2.72902 9.84497 2.10895 8.39187 2.01409C6.93876 1.91924 5.50076 2.35607 4.34595 3.24316C3.19114 4.13024 2.39835 5.40703 2.11539 6.83547C1.83243 8.26391 2.07862 9.7465 2.80804 11.0068L2.02617 13.3412C1.99679 13.4293 1.99253 13.5238 2.01386 13.6142C2.03519 13.7046 2.08127 13.7873 2.14694 13.8529C2.2126 13.9186 2.29526 13.9647 2.38565 13.986C2.47603 14.0074 2.57057 14.0031 2.65867 13.9737L4.99554 13.1943Z' stroke='currentColor' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	}
+
+}

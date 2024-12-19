@@ -98,8 +98,8 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"},"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}}},"textColor":"contrast-2","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"fontSize":"x-small","fontFamily":"system-sans-serif"} -->
-	<div class="wp-block-group has-contrast-2-color has-text-color has-link-color has-system-sans-serif-font-family has-x-small-font-size" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"},"blockGap":"var:preset|spacing|20"},"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}}},"textColor":"contrast-2","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"fontSize":"x-small"} -->
+	<div class="wp-block-group has-contrast-2-color has-text-color has-link-color has-x-small-font-size" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0.275em"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">

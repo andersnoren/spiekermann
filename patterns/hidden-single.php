@@ -17,9 +17,9 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 		<div class="wp-block-group" style="padding-top:0;padding-bottom:0"><!-- wp:post-title {"level":1} /-->
 
-			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}},"spacing":{"blockGap":"var:preset|spacing|20"}},"textColor":"contrast-2","layout":{"type":"flex","flexWrap":"wrap"},"fontSize":"small","fontFamily":"system-sans-serif"} -->
+			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}},"spacing":{"blockGap":"var:preset|spacing|20"}},"textColor":"contrast-2","layout":{"type":"flex","flexWrap":"wrap"},"fontSize":"small"} -->
 			<div
-				class="wp-block-group has-contrast-2-color has-text-color has-link-color has-system-sans-serif-font-family has-small-font-size">
+				class="wp-block-group has-contrast-2-color has-text-color has-link-color has-small-font-size">
 				<!-- wp:post-date {"format":"M j, Y"} /-->
 
 				<!-- wp:paragraph -->

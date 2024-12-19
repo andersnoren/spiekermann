@@ -39,6 +39,10 @@ Alpha Lyrae font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/vegaprotocol/alpha-lyrae
 
+Fitty script
+License: MIT, https://opensource.org/license/mit
+Source: https://github.com/rikschennink/fitty
+
 Icons by Anders Norén
 License: Public Domain
 Source: Created for the theme

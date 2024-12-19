@@ -74,7 +74,6 @@ a, .wp-element-button {
 }
 
 label {
-	font-family: var( --wp--preset--font-family--system-sans-serif );
 	font-size: var(--wp--preset--font-size--x-small);
 }
 
@@ -83,7 +82,7 @@ label {
 	border: 1px solid var(--wp--preset--color--contrast-4);
 	border-radius: 4px;
 	color: inherit;
-	font-family: var(--wp--preset--font-family--system-sans-serif);
+	font-family: inherit;
 	font-size: var( --wp--preset--font-size--small );
 	line-height: 1.5;
 	margin: 0;

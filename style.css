@@ -32,6 +32,16 @@ a, .wp-element-button {
 	transition: color .1s linear, background-color .1s linear, border-color .1s linear, opacity .1s linear;
 }
 
+@supports (min-height: 100dvh) {
+	[style*="min-height:100vh"] {
+		min-height: calc( 100dvh - var( --wp-admin--admin-bar--height, 0px ) ) !important;
+	}
+}
+
+.wp-site-blocks > .wp-block-group[style*="min-height:100vh"] > main {
+	flex: 1;
+}
+
 
 /*
  * Ligatures
@@ -56,28 +66,6 @@ input[type="submit"],
 	font-feature-settings: 'salt' on;
 }
 
-/*
- * Helper classes
- */
-
-body {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-}
-
-:root :where(.wp-site-blocks) > * {
-	margin-block-start: 0;
-}
-
-a {
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.15em;
-}
-
-a, .wp-element-button {
-	transition: color .1s linear, background-color .1s linear, border-color .1s linear, opacity .1s linear;
-}
-
 
 /*
  * Helper classes
@@ -86,6 +74,13 @@ a, .wp-element-button {
 .hide-empty:not(:has(*)) {
 	display: none !important;
 }
+
+.ss00 { font-feature-settings: 'liga' off; }
+.ss01 { font-feature-settings: 'salt' on; }
+.ss02 { font-feature-settings: 'salt' on, 'ss02' on; }
+.ss03 { font-feature-settings: 'salt' on, 'ss03' on; }
+.ss04 { font-feature-settings: 'salt' on, 'ss04' on; }
+.ss05 { font-feature-settings: 'salt' on, 'ss05' on; }
 
 
 /*
@@ -127,87 +122,4 @@ footer.wp-block-template-part a[href="https://andersnoren.se"] {
 
 footer.wp-block-template-part a[href="https://andersnoren.se"]:hover {
 	text-decoration: underline;
-}
-
-/* Block: Query Pagination --------- */
-
-/* STYLE: ARROW LINKS */
-
-body {
-	--stem: .08333333333em;
-}
-
-:root [class*="wp-block-"][class*="-pagination"] > * {
-	margin: 0;
-}
-
-.wp-block-comments-pagination a,
-.wp-block-query-pagination > :not([class*="numbers"]),
-.wp-block-post-navigation-link {
-	display: flex;
-	gap: .666em;
-}
-
-.wp-block-query-pagination[class*="-justification-stretch"] > :not([class*="numbers"]):only-child {
-	width: 100%;
-}
-
-.wp-block-comments-pagination a,
-.wp-block-comments-pagination a .rich-text,
-.wp-block-post-navigation-link,
-.wp-block-post-navigation-link .rich-text,
-.wp-block-query-pagination > :not([class*="numbers"]),
-.wp-block-query-pagination > :not([class*="numbers"]) .rich-text {
-	flex-shrink: 0;
-	white-space: nowrap !important;
-}
-
-.wp-block-query-pagination > [class*="numbers"] {
-	display: flex;
-	flex-wrap: wrap;
-	gap: max(8px, .1666em);
-}
-
-/* Pseudo Chevron/Arrows */
-
-:root .is-arrow-arrow {
-	-webkit-text-fill-color: transparent;
-	margin: 0;
-	min-width: calc( 8 * var( --stem ) );
-	position: relative;
-	width: 100%;
-}
-
-:root .is-arrow-arrow:before,
-:root .is-arrow-arrow:after {
-	background: currentColor;
-	content: "";
-    display: block;
-	position: absolute;
-		top: 50%;
-	transform: translateY( -50% );
-}
-
-:root .is-arrow-arrow:before {
-    height: var( --stem );
-	left: var( --stem );
-	right: 0;
-}
-
-:root .is-arrow-arrow:after {
-	height: .75em;
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: contain;
-	width: .4166666667em;
-}
-
-:root .is-arrow-arrow[class*="next"]:after { 
-	mask-image: url("data:image/svg+xml,%3Csvg width='10' height='19' viewBox='0 0 10 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2.49854H4V4.49854H6V6.49854H8V8.49854H10V10.4985H8V12.4985H6V14.4985H4V16.4985H2V18.4985H0V0.498535H2V2.49854Z' fill='black'/%3E%3C/svg%3E%0A");
-	right: 0;
-}
-
-:root .is-arrow-arrow[class*="previous"]:after { 
-	mask-image: url("data:image/svg+xml,%3Csvg width='10' height='19' viewBox='0 0 10 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 2.49854H6V4.49854H4V6.49854H2V8.49854H0V10.4985H2V12.4985H4V14.4985H6V16.4985H8V18.4985H10V0.498535H8V2.49854Z' fill='black'/%3E%3C/svg%3E%0A");
-	left: 0;
 }

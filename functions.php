@@ -107,6 +107,10 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 	 * @return void
 	 */
 	function spiekermann_block_stylesheets() {
+
+		/**
+		 * Individual blocks.
+		 */
 		
 		$spiekermann_styled_blocks = array(
 			'core/button'           => 'button',
@@ -115,7 +119,6 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 			'core/paragraph'        => 'paragraph',
 			'core/post-terms'       => 'post-terms',
 			'core/pullquote'        => 'pullquote',
-			'core/query-pagination' => 'query-pagination',
 		);
 
 		foreach ( $spiekermann_styled_blocks as $block_name_with_namespace => $block_name ) {
@@ -128,6 +131,36 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 				)
 			);
 		}
+
+		/**
+		 * Pagination styles.
+		 */
+
+		$pagination_block_names = array(
+			'core/comments-pagination',
+			'core/post-navigation-link',
+			'core/query-pagination',
+		);
+
+		foreach( $pagination_block_names as $block_name ) {
+			wp_enqueue_block_style(
+				$block_name,
+				array(
+					'handle' => 'spiekermann-pagination',
+					'src'    => get_template_directory_uri() . '/assets/css/pagination.css',
+					'path'   => get_template_directory() . '/assets/css/pagination.css',
+				)
+			);
+		}
+
+		wp_enqueue_block_style(
+			'core/post-navigation-link',
+			array(
+				'handle' => 'spiekermann-pagination',
+				'src'    => get_template_directory_uri() . '/assets/css/pagination.css',
+				'path'   => get_template_directory() . '/assets/css/pagination.css',
+			)
+		);
 
 	}
 endif;

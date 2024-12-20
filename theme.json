@@ -19,7 +19,7 @@
 					"slug": "base"
 				},
 				{
-					"color": "#191716",
+					"color": "#000000",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
@@ -27,6 +27,11 @@
 					"color": "#767676",
 					"name": "Contrast / Two",
 					"slug": "contrast-2"
+				},
+				{
+					"color": "#A8A8A8",
+					"name": "Contrast / Three",
+					"slug": "contrast-3"
 				}
 			]
 		},
@@ -196,7 +201,7 @@
 				{
 					"fluid": false,
 					"name": "Massive",
-					"size": "clamp( 96px, 19.2vw, 128px )",
+					"size": "clamp( 96px, 12.8vw, 192px )",
 					"slug": "massive"
 				},
 				{

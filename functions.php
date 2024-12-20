@@ -128,6 +128,7 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 			'core/post-template' => 'post-template',
 			'core/post-terms'    => 'post-terms',
 			'core/pullquote'     => 'pullquote',
+			'core/search'        => 'search',
 		);
 
 		foreach ( $spiekermann_styled_blocks as $block_name_with_namespace => $block_name ) {

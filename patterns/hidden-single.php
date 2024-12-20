@@ -53,15 +53,12 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
 			<!-- wp:post-terms {"term":"post_tag","separator":"  ","className":"is-style-pill is-style-spiekermann-post-terms","fontSize":"x-small"} /-->
-
-			<!-- wp:pattern {"slug":"spiekermann/hidden-single-sharing-row"} /-->
-
 		</div>
 		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:pattern {"slug":"spiekermann/hidden-comments"} /-->
+	<!-- wp:template-part {"slug":"comments","area":"uncategorized"} /-->
 
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">

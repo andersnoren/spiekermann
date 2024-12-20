@@ -39,37 +39,6 @@
 		</div>
 		<!-- /wp:columns -->
 
-		<?php 
-		/*
-		 * Only output this section if the Jetpack Subscribe block is registered.
-		 */
-		if ( spiekermann_is_block_registered( 'jetpack/subscriptions' ) ) : 
-			?>
-
-			<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|50"}}}} -->
-			<div class="wp-block-columns">
-				<!-- wp:column {"width":"30%"} -->
-				<div class="wp-block-column" style="flex-basis:30%">
-					<!-- wp:heading {"fontSize":"small"} -->
-					<h2 class="wp-block-heading has-small-font-size">
-						<?php esc_html_e('Newsletter', 'spiekermann');?>
-					</h2>
-					<!-- /wp:heading -->
-				</div>
-				<!-- /wp:column -->
-
-				<!-- wp:column {"width":""} -->
-				<div class="wp-block-column">
-					<!-- wp:jetpack/subscriptions {"includeSocialFollowers":false,"buttonOnNewLine":true,"buttonWidth":"100%","submitButtonText":"Sign up","borderRadius":4,"spacing":16} /-->
-				</div>
-				<!-- /wp:column -->
-			</div>
-			<!-- /wp:columns -->
-
-			<?php
-		endif;
-		?>
-
 		<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|50"}}}} -->
 		<div class="wp-block-columns">
 			<!-- wp:column {"verticalAlignment":"top","width":"30%"} -->

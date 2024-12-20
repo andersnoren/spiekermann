@@ -83,6 +83,14 @@ if ( ! function_exists( 'spiekermann_block_styles' ) ) :
 		);
 
 		register_block_style(
+			'core/post-template',
+			array(
+				'name'	=> 'spiekermann-post-template-asymmetrical-grid',
+				'label'	=> __( 'Asymmetrical grid', 'spiekermann' )
+			)
+		);
+
+		register_block_style(
 			'core/site-title',
 			array(
 				'name'	=> 'spiekermann-fitty',
@@ -113,12 +121,13 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 		 */
 		
 		$spiekermann_styled_blocks = array(
-			'core/button'           => 'button',
-			'core/comments'         => 'comments',
-			'core/footnotes'        => 'footnotes',
-			'core/paragraph'        => 'paragraph',
-			'core/post-terms'       => 'post-terms',
-			'core/pullquote'        => 'pullquote',
+			'core/button'        => 'button',
+			'core/comments'      => 'comments',
+			'core/footnotes'     => 'footnotes',
+			'core/paragraph'     => 'paragraph',
+			'core/post-template' => 'post-template',
+			'core/post-terms'    => 'post-terms',
+			'core/pullquote'     => 'pullquote',
 		);
 
 		foreach ( $spiekermann_styled_blocks as $block_name_with_namespace => $block_name ) {

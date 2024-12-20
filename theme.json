@@ -101,6 +101,11 @@
 					"name": "Body Margin (36px)",
 					"size": "clamp(16px, 3.6vw, 36px)",
 					"slug": "body-margin"
+				},
+				{
+					"name": "Grid Gutter (24px)",
+					"size": "clamp(16px, 2.4vw, 24px)",
+					"slug": "grid-gutter"
 				}
 			],
 			"units": [
@@ -602,7 +607,7 @@
 			},
 			"core/post-template": {
 				"spacing": {
-					"blockGap": "var(--wp--preset--spacing--100)"
+					"blockGap": "var(--wp--preset--spacing--80)"
 				}
 			},
 			"core/post-terms": {
@@ -752,10 +757,10 @@
 						"top": "var(--wp--preset--spacing--70)"
 					},
 					"padding": {
-						"bottom": "var(--wp--preset--spacing--10)",
+						"bottom": "0",
 						"left": "var(--wp--preset--spacing--60)",
 						"right": "0",
-						"top": "var(--wp--preset--spacing--10)"
+						"top": "0"
 					}
 				},
 				"typography": {
@@ -770,10 +775,10 @@
 						},
 						"spacing": {
 							"padding": {
-								"bottom": "var(--wp--preset--spacing--10)",
+								"bottom": "0",
 								"left": "var(--wp--preset--spacing--60)",
 								"right": "0",
-								"top": "var(--wp--preset--spacing--10)"
+								"top": "0"
 							}
 						}
 					}

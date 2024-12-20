@@ -1,0 +1,29 @@
+@media ( min-width: 700px ) {
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid {
+		--cols-count: 24;
+		--col-width: calc((100% - (var(--cols-count) - 1) * var(--wp--preset--spacing--grid-gutter)) / var(--cols-count));
+	}
+
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li {
+		--col-span: calc(var(--col-end) - var(--col-start));
+		margin-left: calc(var(--col-start) * var(--col-width) + (max(var(--col-start) - 1, 0 )) * var(--wp--preset--spacing--grid-gutter));
+		min-height: 15vw;
+		width: calc(var(--col-span) * var(--col-width) + (var(--col-span) - 1 ) * var(--wp--preset--spacing--grid-gutter));
+	}
+
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li.has-post-thumbnail + li.has-post-thumbnail {
+		margin-block-start: -5vw;
+	}
+
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+1) { --col-start: 1; --col-end: 13; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+2) { --col-start: 16; --col-end: 24; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+3) { --col-start: 0; --col-end: 12; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+4) { --col-start: 15; --col-end: 23; }
+}
+
+@media ( min-width: 1200px ) {
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+1) { --col-start: 4; --col-end: 10; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+2) { --col-start: 11; --col-end: 24; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+3) { --col-start: 1; --col-end: 9; }
+	body:not(.editor-styles-wrapper) .is-style-spiekermann-post-template-asymmetrical-grid li:nth-child(4n+4) { --col-start: 12; --col-end: 23; }
+}

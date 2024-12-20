@@ -1,5 +1,5 @@
 .has-drop-cap:not(:focus):first-letter {
 	font-feature-settings: 'salt' on;
-	font-size: 6.6em;
-	margin-top: .225em;
+	font-size: 5.3em;
+	margin-top: .08em;
 }

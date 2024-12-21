@@ -101,7 +101,7 @@
 				},
 				{
 					"name": "192px",
-					"size": "clamp(96px, 19.2vw, 192px)",
+					"size": "max(clamp(96px, 19.2vw, 128px), 21.33333333vh)",
 					"slug": "110"
 				},
 				{

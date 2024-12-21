@@ -49,11 +49,19 @@ Source: Created for the theme
 
 === Images in screenshot.png ===
 
-Joseph Pulitzer photograph
-License: CC0, https://creativecommons.org/public-domain/cc0/
-Source: https://commons.wikimedia.org/wiki/File:JosephPulitzerPinceNeznpsgov.jpg
+Steese National Conservation Area - Postcard
+License: CC BY 2.0, https://creativecommons.org/licenses/by/2.0/
+Source: https://www.flickr.com/photos/91981596@N06/26268022190
+
+Jupiter Inlet Lighthouse Outstanding Natural Area in Florida - Poster
+License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0/
+Source: https://www.flickr.com/photos/91981596@N06/18858824315
+
+Red Rock Canyon National Conservation Area - Poster
+License: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0/
+Source: https://www.flickr.com/photos/91981596@N06/26142093052
 
 == Changelog ==
 
-Version 1.0.0 (2024-XX-XX)
+Version 1.0.0 (2025-XX-XX)
 -------------------------

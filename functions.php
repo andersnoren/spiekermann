@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'spiekermann_styles' );
  * @return void
  */
 function spiekermann_scripts() {
-	wp_register_script( 'spiekermann-fitty', get_template_directory_uri() . '/assets/js/fitty/fitty.min.js', array(), '2.3.0' );
+	wp_register_script( 'spiekermann-fitty', get_template_directory_uri() . '/assets/js/fitty/fitty.min.js', array(), '2.3.0', array( 'in_footer' => true ) );
 
 	wp_enqueue_script( 'spiekermann-index', get_template_directory_uri() . '/assets/js/index.js', array( 'spiekermann-fitty' ), wp_get_theme( 'spiekermann' )->get( 'Version' ), array( 'in_footer' => true ) );
 }
@@ -61,43 +61,42 @@ if ( ! function_exists( 'spiekermann_block_styles' ) ) :
 		register_block_style(
 			'core/comment-edit-link',
 			array(
-				'name'	=> 'spiekermann-comment-edit-link',
-				'label'	=> __( 'Button', 'spiekermann' )
+				'name'  => 'spiekermann-comment-edit-link',
+				'label' => __( 'Button', 'spiekermann' ),
 			)
 		);
 
 		register_block_style(
 			'core/comment-reply-link',
 			array(
-				'name'	=> 'spiekermann-comment-reply-link',
-				'label'	=> __( 'Button', 'spiekermann' )
+				'name'  => 'spiekermann-comment-reply-link',
+				'label' => __( 'Button', 'spiekermann' ),
 			)
 		);
 
 		register_block_style(
 			'core/post-terms',
 			array(
-				'name'	=> 'spiekermann-post-terms-tag-icon',
-				'label'	=> __( 'With tag icon', 'spiekermann' )
+				'name'  => 'spiekermann-post-terms-tag-icon',
+				'label' => __( 'With tag icon', 'spiekermann' ),
 			)
 		);
 
 		register_block_style(
 			'core/post-template',
 			array(
-				'name'	=> 'spiekermann-post-template-asymmetrical-grid',
-				'label'	=> __( 'Asymmetrical grid', 'spiekermann' )
+				'name'  => 'spiekermann-post-template-asymmetrical-grid',
+				'label' => __( 'Asymmetrical grid', 'spiekermann' ),
 			)
 		);
 
 		register_block_style(
 			'core/site-title',
 			array(
-				'name'	=> 'spiekermann-fitty',
-				'label'	=> __( 'Resize text to fill available space', 'spiekermann' )
+				'name'  => 'spiekermann-fitty',
+				'label' => __( 'Resize text to fill available space', 'spiekermann' ),
 			)
 		);
-		
 	}
 endif;
 
@@ -119,7 +118,7 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 		/**
 		 * Individual blocks.
 		 */
-		
+
 		$spiekermann_styled_blocks = array(
 			'core/button'        => 'button',
 			'core/calendar'      => 'calendar',
@@ -156,7 +155,7 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 			'core/query-pagination',
 		);
 
-		foreach( $pagination_block_names as $block_name ) {
+		foreach ( $pagination_block_names as $block_name ) {
 			wp_enqueue_block_style(
 				$block_name,
 				array(
@@ -175,7 +174,6 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 				'path'   => get_template_directory() . '/assets/css/pagination.css',
 			)
 		);
-
 	}
 endif;
 
@@ -222,11 +220,11 @@ if ( ! function_exists( 'spiekermann_register_block_bindings' ) ) :
 		/*
 		 * Copyright character with current year.
 		 */
-		register_block_bindings_source( 
-			'spiekermann/copyright-year', 
+		register_block_bindings_source(
+			'spiekermann/copyright-year',
 			array(
 				'label'              => __( 'Copyright year', 'spiekermann' ),
-				'get_value_callback' => 'spiekermann_block_binding_callback_copyright_year'
+				'get_value_callback' => 'spiekermann_block_binding_callback_copyright_year',
 			)
 		);
 	}
@@ -248,6 +246,6 @@ if ( ! function_exists( 'spiekermann_block_binding_callback_copyright_year' ) ) 
 	 * @return string
 	 */
 	function spiekermann_block_binding_callback_copyright_year() {
-		return '&copy; ' . date( 'Y' );
+		return '&copy; ' . gmdate( 'Y' );
 	}
 endif;

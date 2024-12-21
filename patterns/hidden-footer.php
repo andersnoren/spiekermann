@@ -19,7 +19,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"0.275em"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"spiekermann/copyright-year"}}}} -->
-			<p><?php esc_html_e('© [year]', 'spiekermann');?></p>
+			<p><?php esc_html_e( '© [year]', 'spiekermann' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"xx-small"} /-->
@@ -27,7 +27,8 @@
 		<!-- /wp:group -->
 
 		<!-- wp:paragraph -->
-		<p><?php _e('Theme by <a href="https://andersnoren.se">Anders Norén</a>', 'spiekermann');?></p>
+		<?php /* Translators: %s = Theme author name, linked */ ?>
+		<p><?php printf( esc_html( _x( 'Theme by %s', '%s = Theme author name, linked', 'spiekermann' ) ), '<a href="https://andersnoren.se">Anders Norén</a>' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

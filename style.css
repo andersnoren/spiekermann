@@ -112,8 +112,8 @@ input[type="submit"],
 /*
  * Inputs
  */
- 
-::placeholder { 
+
+::placeholder {
 	color: var( --wp--preset--color--contrast-2 );
 }
 

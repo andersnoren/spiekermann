@@ -27,7 +27,7 @@
 	<!-- wp:column {"verticalAlignment":"center"} -->
 	<div class="wp-block-column is-vertically-aligned-center">
 		<!-- wp:paragraph -->
-		<p class="has-text-align-center"><?php echo esc_html_x( 'Best return to the front page.', '404: Message to convey that a webpage could not be found', 'spiekermann' ); ?></p>
+		<p><?php echo esc_html_x( 'Best return to the front page.', '404: Message to convey that a webpage could not be found', 'spiekermann' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:column -->

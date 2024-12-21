@@ -1,0 +1,19 @@
+.wp-block-table thead {
+	border-bottom: none;
+}
+
+.wp-block-table th {
+	border: none;
+}
+
+/*
+ * Block Style: Stripes
+ */
+
+.wp-block-table.is-style-stripes {
+	border-bottom-color: color-mix(in srgb, currentColor 5%, transparent);
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: color-mix(in srgb, currentColor 5%, transparent);
+}

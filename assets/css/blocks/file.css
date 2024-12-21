@@ -1,0 +1,18 @@
+.wp-block-file,
+.wp-block-file__content-wrapper {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wp-block-file:not(.wp-element-button) {
+	font-size: inherit;
+}
+
+.wp-block-file a:not(.wp-element-button) {
+	padding-left: var( --wp--preset--spacing--10 );
+}
+
+.wp-block-file__button {
+	opacity: 1 !important;
+}

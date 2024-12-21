@@ -1,0 +1,31 @@
+{
+    "title": "Inverted",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#000",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#FFF",
+					"name": "Contrast"
+				},
+				{
+					"slug": "contrast-2",
+					"color": "#999",
+					"name": "Contrast 2"
+				},
+				{
+					"color": "#666",
+					"name": "Contrast / Three",
+					"slug": "contrast-3"
+				}
+			]
+		}
+    }
+}

@@ -122,13 +122,17 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 		
 		$spiekermann_styled_blocks = array(
 			'core/button'        => 'button',
+			'core/calendar'      => 'calendar',
 			'core/comments'      => 'comments',
+			'core/file'          => 'file',
 			'core/footnotes'     => 'footnotes',
 			'core/paragraph'     => 'paragraph',
 			'core/post-template' => 'post-template',
 			'core/post-terms'    => 'post-terms',
 			'core/pullquote'     => 'pullquote',
 			'core/search'        => 'search',
+			'core/separator'     => 'separator',
+			'core/table'         => 'table',
 		);
 
 		foreach ( $spiekermann_styled_blocks as $block_name_with_namespace => $block_name ) {

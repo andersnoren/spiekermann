@@ -1,27 +1,27 @@
 {
-    "title": "Inverted",
+    "title": "Taxi",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#FFE845",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#FFF",
+					"color": "#000",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#999",
+					"color": "#403A11",
 					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#666",
+					"color": "#807423",
 					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}

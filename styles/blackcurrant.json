@@ -1,27 +1,27 @@
 {
-    "title": "Inverted",
+    "title": "Blackcurrant",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#F16085",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#FFF",
+					"color": "#011E41",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#999",
+					"color": "#3D2F52",
 					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#666",
+					"color": "#793F63",
 					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}

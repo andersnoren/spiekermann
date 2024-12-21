@@ -32,12 +32,12 @@
 				},
 				{
 					"color": "#767676",
-					"name": "Contrast / Two",
+					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
 					"color": "#A8A8A8",
-					"name": "Contrast / Three",
+					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}
 			]
@@ -281,6 +281,11 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/avatar": {
+				"border": {
+					"radius": "5px"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"outline": {
@@ -611,8 +616,8 @@
 					"heading": {
 						"spacing": {
 							"margin": {
-								"top": "1em",
-								"bottom": ".5em"
+								"top": "var(--wp--preset--spacing--90)",
+								"bottom": "var(--wp--preset--spacing--60)"
 							}
 						}
 					}
@@ -1032,7 +1037,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system-serif)",
+			"fontFamily": "var(--wp--preset--font-family--body)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"fontStyle": "normal",
 			"fontWeight": "400",

@@ -1,12 +1,12 @@
 {
-    "title": "Inverted",
+    "title": "Hestra",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#2D3F2F",
 					"name": "Base",
 					"slug": "base"
 				},
@@ -16,12 +16,12 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#999",
+					"color": "#A3ABA4",
 					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#666",
+					"color": "#7C877D",
 					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}

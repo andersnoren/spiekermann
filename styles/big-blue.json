@@ -1,27 +1,27 @@
 {
-    "title": "Inverted",
+    "title": "Big Blue",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#FAFAFA",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#FFF",
+					"color": "#288DFF",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#999",
+					"color": "#5DA8FE",
 					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#666",
+					"color": "#91C3FD",
 					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}

@@ -1,0 +1,36 @@
+{
+    "title": "Cocktail",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FFF",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#000",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#000",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#000",
+					"name": "Contrast 3",
+					"slug": "contrast-3"
+				}
+			]
+		}
+    },
+	"styles": {
+		"color": {
+			"gradient": "radial-gradient(at 69% 89%, hsla(231,100%,79%,1) 0px, transparent 50%), radial-gradient(at 21% 11%, hsla(329,100%,79%,1) 0px, transparent 50%), radial-gradient(at 17% 52%, hsla(175,100%,79%,1) 0px, transparent 50%), radial-gradient(at 14% 91%, hsla(34,100%,79%,1) 0px, transparent 50%), radial-gradient(at 89% 1%, hsla(249,100%,79%,1) 0px, transparent 50%), radial-gradient(at 6% 22%, hsla(150,100%,79%,1) 0px, transparent 50%), radial-gradient(at 73% 4%, hsla(111,100%,79%,1) 0px, transparent 50%);"
+		}
+	}
+}

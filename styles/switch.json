@@ -1,27 +1,27 @@
 {
-    "title": "Inverted",
+    "title": "Switch",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000",
+					"color": "#121212",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
-					"color": "#FFF",
+					"color": "#F4F3E3",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#999",
+					"color": "#BCBBAF",
 					"name": "Contrast 2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#666",
+					"color": "#83827B",
 					"name": "Contrast 3",
 					"slug": "contrast-3"
 				}

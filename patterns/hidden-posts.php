@@ -48,7 +48,7 @@
 	<!-- wp:pattern {"slug":"spiekermann/hidden-no-results"} /-->
 	<!-- /wp:query-no-results -->
 
-	<!-- wp:query-pagination {"paginationArrow":"arrow","textColor":"primary","layout":{"type":"flex","justifyContent":"space-between"}} -->
+	<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
 	<!-- wp:query-pagination-previous {"label":"<?php esc_html_e( 'Previous', 'spiekermann' ); ?>"} /-->
 
 	<!-- wp:query-pagination-numbers /-->

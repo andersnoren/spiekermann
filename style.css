@@ -17,6 +17,7 @@ Tested up to: 6.7
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	font-synthesis: small-caps style;
 }
 
 :root :where(.wp-site-blocks) > * {

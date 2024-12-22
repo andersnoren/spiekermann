@@ -3,8 +3,56 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
 	"styles": {
+		"blocks": {
+			"core/comment-content": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"core/post-content": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"core/post-excerpt": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"cite": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
+			}
+		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system-serif)"
+			"fontFamily": "var(--wp--preset--font-family--system-serif)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontStyle": "normal",
+			"fontWeight": "400",
+			"lineHeight": "1.5"
 		}
 	}
 }

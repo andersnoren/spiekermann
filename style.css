@@ -17,6 +17,7 @@ Tested up to: 6.7
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	font-feature-settings: 'salt' on;
 	font-synthesis: small-caps style;
 }
 
@@ -66,33 +67,9 @@ th {
 	line-height: 1.35;
 }
 
-/* Disable ligatures */
-
-figcaption,
-input,
-textarea,
-table,
-.wp-block-comment-content p,
-.wp-block-post-content li,
-.wp-block-post-content p,
-.wp-block-post-excerpt,
-.wp-block-quote {
-	font-feature-settings: 'liga' off, 'calt' off;
-}
-
-/* Enable ligatures */
-
-body,
-button,
-cite,
-input[type="submit"],
-:root .has-large-font-size,
-:root .wp-block-pullquote p,
-:root .has-x-large-font-size,
-.has-large-font-size > p,
-.has-x-large-font-size > p,
-.wp-block-calendar caption {
-	font-feature-settings: 'salt' on;
+.entry-content,
+.comment-content {
+	font-feature-settings: 'cv10' on, 'ss01' on, 'ss03' on, 'ss02' on, 'liga' off, 'calt' off;
 }
 
 /*
@@ -127,7 +104,7 @@ label {
 	border: 1px solid;
 	border-radius: 5px;
 	color: inherit;
-	font-family: inherit;
+	font-family: var(--wp--preset--font-family--body-alt);
 	font-size: var( --wp--preset--font-size--normal );
 	line-height: 1.5;
 	margin: 0;

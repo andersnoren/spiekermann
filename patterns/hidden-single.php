@@ -49,8 +49,8 @@
 <!-- /wp:group -->
 
 <?php if ( spiekermann_is_block_registered( 'jetpack/related-posts' ) ) : ?>
-	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0">
 		<!-- wp:jetpack/related-posts {"displayDate":false,"displayThumbnails":true,"align":"wide"} -->
 		<div class="wp-block-jetpack-related-posts alignwide">
 			<!-- wp:heading {"placeholder":"Add a headline","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}},"fontSize":"medium"} -->

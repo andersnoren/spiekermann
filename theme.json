@@ -91,7 +91,7 @@
 				},
 				{
 					"name": "96px",
-					"size": "clamp(64px, 9.6vw, 96px)",
+					"size": "clamp(56px, 9.6vw, 96px)",
 					"slug": "90"
 				},
 				{
@@ -101,7 +101,7 @@
 				},
 				{
 					"name": "192px",
-					"size": "max(clamp(96px, 19.2vw, 128px), 16vh)",
+					"size": "clamp(96px, 19.2vw, 192px)",
 					"slug": "110"
 				},
 				{
@@ -247,7 +247,7 @@
 				},
 				{
 					"fluid": {
-						"min": "40px",
+						"min": "36px",
 						"max": "72px"
 					},
 					"name": "Heading 1",
@@ -256,7 +256,7 @@
 				},
 				{
 					"fluid": {
-						"min": "36px",
+						"min": "32px",
 						"max": "60px"
 					},
 					"name": "Heading 2",
@@ -265,7 +265,7 @@
 				},
 				{
 					"fluid": {
-						"min": "32px",
+						"min": "28px",
 						"max": "48px"
 					},
 					"name": "Heading 3",
@@ -274,7 +274,7 @@
 				},
 				{
 					"fluid": {
-						"min": "28px",
+						"min": "24px",
 						"max": "40px"
 					},
 					"name": "Heading 4",
@@ -283,7 +283,7 @@
 				},
 				{
 					"fluid": {
-						"min": "24px",
+						"min": "21px",
 						"max": "32px"
 					},
 					"name": "Heading 5",

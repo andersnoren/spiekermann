@@ -248,7 +248,7 @@ if ( ! function_exists( 'spiekermann_is_block_registered' ) ) :
 	 */
 	function spiekermann_is_block_registered( $block_name ) {
 		$registry = WP_Block_Type_Registry::get_instance();
- 		return $registry->get_registered( $block_name );
+		return $registry->get_registered( $block_name );
 	}
 endif;
 
@@ -269,3 +269,27 @@ if ( ! function_exists( 'spiekermann_block_binding_callback_copyright_year' ) ) 
 		return '&copy; ' . gmdate( 'Y' );
 	}
 endif;
+
+
+/**
+ * Filter the size of images in Jetpack related posts.
+ */
+if ( ! function_exists( 'spiekermann_filter_jetpack_relatedposts_filter_thumbnail_size' ) ) :
+	/**
+	 * Filter the size of images in Jetpack related posts
+	 *
+	 * @since Spiekermann 1.0
+	 * @return void
+	 */
+	function spiekermann_filter_jetpack_relatedposts_filter_thumbnail_size() {
+		/*
+		 * This tells Jetpack to display the images in the original aspect ratio.
+		 */
+		return array(
+			'height' => '9999',
+			'width'  => '9999',
+		);
+	}
+endif;
+
+add_filter( 'jetpack_relatedposts_filter_thumbnail_size', 'spiekermann_filter_jetpack_relatedposts_filter_thumbnail_size' );

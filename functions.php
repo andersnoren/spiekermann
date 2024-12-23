@@ -46,6 +46,7 @@ function spiekermann_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'spiekermann_scripts' );
 
+
 /**
  * Register block styles.
  */
@@ -120,19 +121,20 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 		 */
 
 		$spiekermann_styled_blocks = array(
-			'core/button'        => 'button',
-			'core/calendar'      => 'calendar',
-			'core/comments'      => 'comments',
-			'core/file'          => 'file',
-			'core/footnotes'     => 'footnotes',
-			'core/navigation'    => 'navigation',
-			'core/paragraph'     => 'paragraph',
-			'core/post-template' => 'post-template',
-			'core/post-terms'    => 'post-terms',
-			'core/pullquote'     => 'pullquote',
-			'core/search'        => 'search',
-			'core/separator'     => 'separator',
-			'core/table'         => 'table',
+			'core/button'           => 'button',
+			'core/calendar'         => 'calendar',
+			'core/comments'         => 'comments',
+			'core/file'             => 'file',
+			'core/footnotes'        => 'footnotes',
+			'core/navigation'       => 'navigation',
+			'core/paragraph'        => 'paragraph',
+			'core/post-template'    => 'post-template',
+			'core/post-terms'       => 'post-terms',
+			'core/pullquote'        => 'pullquote',
+			'core/search'           => 'search',
+			'core/separator'        => 'separator',
+			'core/table'            => 'table',
+			'jetpack/related-posts' => 'jetpack-related-posts',
 		);
 
 		foreach ( $spiekermann_styled_blocks as $block_name_with_namespace => $block_name ) {
@@ -232,6 +234,23 @@ if ( ! function_exists( 'spiekermann_register_block_bindings' ) ) :
 endif;
 
 add_action( 'init', 'spiekermann_register_block_bindings' );
+
+
+/**
+ * Check if a block is registered.
+ */
+if ( ! function_exists( 'spiekermann_is_block_registered' ) ) :
+	/**
+	 * Check if a block is registered
+	 *
+	 * @since Spiekermann 1.0
+	 * @return bool
+	 */
+	function spiekermann_is_block_registered( $block_name ) {
+		$registry = WP_Block_Type_Registry::get_instance();
+ 		return $registry->get_registered( $block_name );
+	}
+endif;
 
 
 /*

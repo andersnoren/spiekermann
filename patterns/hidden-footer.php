@@ -9,7 +9,7 @@
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--body-margin)">
 	<!-- wp:group {"align":"wide","style":{"typography":{"lineHeight":"1"}},"layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide" style="line-height:1">
-		<!-- wp:site-title {"isLink":false,"className":"is-style-spiekermann-fitty","style":{"typography":{"lineHeight":"1"}}} /-->
+		<!-- wp:site-title {"level":0,"isLink":false,"className":"is-style-spiekermann-fitty","style":{"typography":{"lineHeight":"1"}}} /-->
 	</div>
 	<!-- /wp:group -->
 

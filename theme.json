@@ -930,6 +930,30 @@
 						"top": "var(--wp--preset--spacing--90)"
 					}
 				}
+			},
+			"jetpack/related-posts": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--90)",
+						"top": "var(--wp--preset--spacing--90)"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--body)",
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
 			}
 		},
 		"color": {

@@ -1,6 +1,6 @@
 # Spiekermann
 
-Spiekermann is a bold WordPress block theme for blogs and portfolios, featuring an asymmetrical grid layout on the front page. Inspired by brutalist design, it uses a quirky pixelated sans-serif font and emphasizes raw aesthetics, unconventional layouts, and typographic focus. It includes ten different color schemes and three different typographic styles to choose from. Demo: https://spiekermann.andersnoren.se
+Spiekermann is a bold WordPress block theme for blogs and portfolios, featuring an asymmetrical grid layout on the front page. Inspired by brutalist design, it uses a quirky pixelated sans-serif font and emphasizes raw aesthetics, unconventional layouts, and typographic focus. It includes ten different color schemes and three different typographic styles to choose from. Activate the Jetpack plugin to add a row of related posts to the bottom of your blog posts. Demo: https://spiekermann.andersnoren.se
 
 ![Spiekermann](https://github.com/andersnoren/spiekermann/blob/main/screenshot.png)
 

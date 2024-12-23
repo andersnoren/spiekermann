@@ -23,6 +23,11 @@
 				"typography": {
 					"fontFamily": "inherit"
 				}
+			},
+			"jetpack/related-posts": {
+				"typography": {
+					"fontFamily": "inherit"
+				}
 			}
 		},
 		"elements": {

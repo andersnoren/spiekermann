@@ -1,7 +1,7 @@
 {
     "title": "Humanist",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 2,
+    "version": 3,
 	"styles": {
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--system-sans-serif)"

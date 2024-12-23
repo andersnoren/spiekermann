@@ -125,6 +125,7 @@ if ( ! function_exists( 'spiekermann_block_stylesheets' ) ) :
 			'core/comments'      => 'comments',
 			'core/file'          => 'file',
 			'core/footnotes'     => 'footnotes',
+			'core/navigation'    => 'navigation',
 			'core/paragraph'     => 'paragraph',
 			'core/post-template' => 'post-template',
 			'core/post-terms'    => 'post-terms',

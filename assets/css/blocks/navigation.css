@@ -1,0 +1,4 @@
+.wp-block-navigation__responsive-container-open,
+.wp-block-navigation__responsive-container-close {
+	font-feature-settings: 'salt' on;
+}

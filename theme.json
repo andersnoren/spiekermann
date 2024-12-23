@@ -101,7 +101,7 @@
 				},
 				{
 					"name": "192px",
-					"size": "max(clamp(96px, 19.2vw, 128px), 21.33333333vh)",
+					"size": "max(clamp(96px, 19.2vw, 128px), 16vh)",
 					"slug": "110"
 				},
 				{
@@ -205,7 +205,7 @@
 				},
 				{
 					"fluid": {
-						"min": "14px",
+						"min": "16px",
 						"max": "18px"
 					},
 					"name": "Small",
@@ -214,7 +214,7 @@
 				},
 				{
 					"fluid": {
-						"min": "16px",
+						"min": "18px",
 						"max": "21px"
 					},
 					"name": "Normal",
@@ -223,7 +223,7 @@
 				},
 				{
 					"fluid": {
-						"min": "16px",
+						"min": "18px",
 						"max": "24px"
 					},
 					"name": "Medium",
@@ -772,13 +772,6 @@
 			"core/query": {
 				"spacing": {
 					"blockGap": "var(--wp--preset--spacing--100)"
-				}
-			},
-			"core/query-no-results": {
-				"spacing": {
-					"padding": {
-						"top": "var(--wp--preset--spacing--30)"
-					}
 				}
 			},
 			"core/query-pagination": {

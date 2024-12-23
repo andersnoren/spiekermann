@@ -4,7 +4,7 @@ Spiekermann is a bold WordPress block theme for blogs and portfolios, featuring 
 
 ![Spiekermann](https://github.com/andersnoren/spiekermann/blob/main/screenshot.png)
 
-You can download the latest stable release of Spiekermann [from WordPress.org](https://wordpress.org/themes/spiekermann/).
+When the theme has been approved, you'll be able to download Spiekermann from WordPress.org. Until then, you can download and install it through this repository.
 
 ## Installing Spiekermann
 1. Download the latest stable version of Spiekermann through the link above, unzip it and upload the theme folder to `wp-content/themes/` in your WordPress installation. You can also install it through Themes → Add New in your WordPress installation.

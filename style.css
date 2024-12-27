@@ -17,7 +17,7 @@ Tested up to: 6.7
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-feature-settings: 'salt' on;
+	font-feature-settings: 'salt' on, 'calt' off, 'liga' off;
 	font-synthesis: small-caps style;
 }
 

@@ -1,7 +1,7 @@
 /*
  * Is an element within the viewport?
  */
-var isInViewport = function( elem, position = 'top' ) {
+var isInViewport = function ( elem, position = 'top' ) {
 
 	var winHeight     = window.innerHeight,
 		docViewTop    = window.scrollY,
@@ -56,17 +56,27 @@ document.addEventListener(
 var findMe = document.querySelectorAll( '.is-style-spiekermann-post-template-asymmetrical-grid-animate > li' );
 
 if ( findMe.length ) {
-	findMe.forEach( element => {
-		element.classList.add( 'will-animate' );
-	} );
+	findMe.forEach(
+		element => {
+			element.classList.add( 'will-animate' );
+		}
+	);
 
-	['scroll', 'load', 'resize', 'orientationchange'].forEach( function( e ) {
-		window.addEventListener( e, function() {
-			findMe.forEach( element => {
-				if ( isInViewport( element, 'middle' ) ) {
-					element.classList.add( 'in-viewport' );
-				}
-			} );
-		}, false );
-	} );
+	['scroll', 'load', 'resize', 'orientationchange'].forEach(
+		function ( e ) {
+			window.addEventListener(
+				e,
+				function () {
+					findMe.forEach(
+						element => {
+							if ( isInViewport( element, 'middle' ) ) {
+								element.classList.add( 'in-viewport' );
+							}
+						}
+					);
+				},
+			false
+			);
+		}
+	);
 }

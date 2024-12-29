@@ -92,6 +92,14 @@ if ( ! function_exists( 'spiekermann_block_styles' ) ) :
 		);
 
 		register_block_style(
+			'core/post-template',
+			array(
+				'name'  => 'spiekermann-post-template-asymmetrical-grid-animate',
+				'label' => __( 'Asymmetrical grid (animated)', 'spiekermann' ),
+			)
+		);
+
+		register_block_style(
 			'core/site-title',
 			array(
 				'name'  => 'spiekermann-fitty',

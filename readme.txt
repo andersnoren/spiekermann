@@ -67,5 +67,5 @@ Source: https://www.flickr.com/photos/91981596@N06/26142093052
 
 == Changelog ==
 
-Version 1.0.0 (2025-XX-XX)
+Version 1.0.0 (2025-01-03)
 -------------------------

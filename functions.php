@@ -95,7 +95,7 @@ if ( ! function_exists( 'spiekermann_block_styles' ) ) :
 			'core/post-template',
 			array(
 				'name'  => 'spiekermann-post-template-asymmetrical-grid-animate',
-				'label' => __( 'Asymmetrical grid (animated)', 'spiekermann' ),
+				'label' => __( 'Asymmetrical grid (reveal on scroll)', 'spiekermann' ),
 			)
 		);
 

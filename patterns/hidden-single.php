@@ -34,6 +34,8 @@
 	</div>
 	<!-- /wp:group -->
 
+	<!-- wp:template-part {"slug":"comments","area":"uncategorized"} /-->
+
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 		<!-- wp:group {"tagName":"nav","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
